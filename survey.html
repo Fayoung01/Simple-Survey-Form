@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Document</title>
+  </head>
+  <body>
+    <div class="container">
+      <h1 id="title">Survey Form</h1>
+      <div class="wrapper">
+        <p id="description">Build Your Dream Car</p>
+
+        <form action="" id="survey-form">
+          <!--Name-->
+          <p>
+            <label id="name-label">*Name: </label>
+            <input
+              type="text"
+              id="name"
+              required
+              placeholder=" Enter your name"
+            />
+          </p>
+
+          <!--email-->
+          <p>
+            <label id="email-label">*E-mail: </label>
+            <input
+              type="email"
+              id="email"
+              required
+              placeholder=" Enter your E-mail"
+            />
+          </p>
+
+          <!--age-->
+          <p>
+            <label for="number" id="number-label">*Age: </label>
+            <input
+              type="number"
+              id="number"
+              required
+              placeholder=" Enter your Age"
+              min="15"
+              max="80"
+            />
+          </p>
+
+          <!--dropdown-->
+          <p>
+            <label for="dropdown" id="dropdown-label"
+              >Which car would you rather own?
+            </label>
+            <select name="Cars" id="dropdown">
+              <option value="" disabled selected>Select your option</option>
+              <option value="tesla">Tesla</option>
+              <option value="mercedes">Mercedes</option>
+              <option value="bentley">Bentley</option>
+              <option value="audi">Audi</option>
+            </select>
+          </p>
+
+          <!--radiobutton-->
+          <p class="radio-btn">
+            <label>What color do you prefer? </label>
+            <span>
+              <input type="radio" name="color" id="white" value="white" />
+              <label for="white">
+                White
+              </label>
+              <input type="radio" name="color" id="black" value="black" />
+              <label for="black">
+                Black
+              </label>
+              <input type="radio" name="color" id="grey" value="grey" />
+              <label for="grey">
+                Grey
+              </label>
+            </span>
+          </p>
+
+          <!--checkbox-->
+          <p>
+            <label>
+              What features are most important?<br />(Check all that apply):
+            </label>
+            <span>
+              <input
+                type="checkbox"
+                name="features"
+                id="heatedseats"
+                value="heatedseats"
+              />
+              <label for="heatedseats">
+                Heated seats
+              </label>
+              <br />
+
+              <input
+                type="checkbox"
+                name="features"
+                id="largegrill"
+                value="largegrill"
+              />
+              <label for="largegrill">
+                Large grills
+              </label>
+              <br />
+
+              <input
+                type="checkbox"
+                name="features"
+                id="Panoramicroof"
+                value="panoramicroof"
+              />
+              <label for="Panoramicroof">
+                Panoramic roof
+              </label>
+              <br />
+
+              <input
+                type="checkbox"
+                name="features"
+                id="largetrunk"
+                value="largetrunk"
+              />
+              <label for="largetrunk">
+                Larger trunk
+              </label>
+              <br />
+
+              <input
+                type="checkbox"
+                name="features"
+                id="fueleconomy"
+                value="fueleconomy"
+              />
+              <label for="fueleconomy">
+                Fuel Economy
+              </label>
+              <br />
+
+              <input
+                type="checkbox"
+                name="features"
+                id="voicecontrol"
+                value="voicecontrol"
+              />
+              <label for="voicecontrol">
+                Voice command control
+              </label>
+              <br />
+            </span>
+          </p>
+
+          <!--text area-->
+          <p>
+            <label for="text-area">
+              Any Comments or Suggestions?
+            </label>
+            <span>
+              <textarea
+                name="addedtext"
+                id="text-area"
+                cols="35"
+                rows="5"
+                placeholder=" Enter your comment here..."
+              >
+              </textarea>
+            </span>
+          </p>
+
+          <!--submit button-->
+          <p>
+            <button id="submit">Submit</button>
+          </p>
+        </form>
+      </div>
+    </div>
+  </body>
+</html>
